@@ -1,0 +1,23 @@
+ 1. Console penceresinde 1 eded daxil edin. Daxil olunan ededin tek ve ya cut oldugunu ekrana yazdirin. 
+
+
+using System;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("eded daxil edin.");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num == 0)
+                Console.WriteLine("zehmet olmasa 0-dan ferqli eded daxil edin");
+            if (num % 2 == 0)
+                Console.WriteLine("daxil etdiyiniz eded cutdur.");
+            else
+                Console.WriteLine("daxil etdiyiniz eded tekdir.");
+            Console.ReadLine();
+        }
+    }
+}

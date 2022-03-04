@@ -1,0 +1,24 @@
+ 2. Console penceresinde 2 eded daxil edin. Daxil olunan 2 ededden hansinin boyuk oldugu ekrana yazilsin. Eger beraberdirse ekrana beraberdir yazilsin.
+
+
+using System;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num_1 =
+                Convert.ToInt32(Console.ReadLine());
+            int num_2 =
+                Convert.ToInt32(Console.ReadLine());
+            if (num_1 == num_2)
+                Console.WriteLine("Ededler bir - birine braberir.");
+            else if (num_1 > num_2)
+                Console.WriteLine("1ci eded boyukdur.");
+            else
+                Console.WriteLine("2ci eded boyukdur.");
+            }
+        }
+    }
